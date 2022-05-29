@@ -1,0 +1,131 @@
+*{
+  font-family: 'PT Sans', sans-serif;
+}
+.NavBar{
+  background-color: #fff;
+  color: #474647 ;
+}
+.Nav_link{
+  text-decoration: none;
+  color: #474647 ;
+}
+.Nav_link Button{
+  color: #474647 !important ;
+} 
+
+.upload-container{
+  text-align: center;
+  border: 1px dashed #474647;
+  padding: 3%;
+  width: 65%;
+}
+#ext{
+  color: #47464785;
+  font-size: small;
+}
+.upload-container .upload_button{
+  padding: 3%;
+}
+.stepper-container{
+  padding: 4%
+}
+.images-container{
+  display: flex;
+  align-items: center;
+}
+
+.arrow{
+  display: block;
+  width: 10%;
+  height: 10%;
+  padding: 1% 0% 1% 0% ;
+}
+.faces-conatiner{
+  display: table-cell;
+  width:40%;
+  text-align: -webkit-center;
+  margin-left: -10%;
+}
+
+.faces-conatiner img{
+  display: block;
+  max-width: 60%;
+  max-height: 50%;
+  border-radius: 6em;
+  opacity: 0.9;
+  padding: 3% 3% 3% 3%;
+}
+
+/* #source-image
+{
+  position:absolute;
+  top: 20em;
+  left: 2em;
+  z-index: 1;
+}
+#destination-image
+{
+  position:absolute;
+  top: 33em;
+  left: 7em;
+  z-index: 0;
+} */
+.filter-image-container{
+  display: flex;
+  width: 95%;
+  margin: 2%;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+	position: relative;
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+	height: 100vh;
+}
+
+.title {
+	position: absolute;
+	align-self: center;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	color: #fff;
+	font-size: 3em;
+  text-shadow: 2px 2px black !important;
+}
+
+.item {
+	background-image: url('https://learnopencv.com/wp-content/uploads/2016/04/presidential-candidates-768x341.jpg');
+	background-attachment: fixed;
+  background-size: cover;
+	animation: loadAnimation 1.2s both;
+}
+.item:nth-child(1) {
+  animation-delay: 1;
+}
+.item:nth-child(2) {
+  /* filter: grayscale(); */
+  animation-delay: .5s;
+}
+.item:nth-child(3) {
+  animation-delay: .8s;
+}
+
+@keyframes loadAnimation{
+	0% { height: 0 }
+	100% { height: 100% }
+}
